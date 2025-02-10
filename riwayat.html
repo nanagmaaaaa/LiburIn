@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Riwayat - Liburin{% endblock %}
+
+{% block content %}
+<section id="riwayat" class="history-section">
+    <h2>Riwayat Cuti Karyawan</h2>
+    <p>Berikut adalah daftar riwayat cuti yang telah diajukan oleh karyawan.</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Karyawan</th>
+                    <th>Jabatan</th>
+                    <th>Tanggal Cuti</th>
+                    <th>Alasan</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Siti Aisyah</td>
+                    <td>Staff Administrasi</td>
+                    <td>12 - 15 Maret 2024</td>
+                    <td>Acara keluarga penting</td>
+                    <td><span class="status approved">Disetujui</span></td>
+                </tr>
+                <tr>
+                    <td>Rudi Hartono</td>
+                    <td>Supervisor</td>
+                    <td>20 - 25 Maret 2024</td>
+                    <td>Liburan keluarga</td>
+                    <td><span class="status rejected">Ditolak</span></td>
+                </tr>
+                <tr>
+                    <td>Indah Permata</td>
+                    <td>HRD</td>
+                    <td>5 - 7 April 2024</td>
+                    <td>Sakit</td>
+                    <td><span class="status approved">Disetujui</span></td>
+                </tr>
+                <tr>
+                    <td>Doni Saputra</td>
+                    <td>Marketing</td>
+                    <td>10 - 15 Mei 2024</td>
+                    <td>Menikah</td>
+                    <td><span class="status pending">Menunggu Persetujuan</span></td>
+                </tr>
+                <tr>
+                    <td>Lisa Wijaya</td>
+                    <td>Finance</td>
+                    <td>15 - 18 Juni 2024</td>
+                    <td>Perjalanan Dinas</td>
+                    <td><span class="status approved">Disetujui</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

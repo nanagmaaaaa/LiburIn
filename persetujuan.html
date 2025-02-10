@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}Persetujuan Cuti - Liburin{% endblock %}
+
+{% block content %}
+<section id="persetujuan" class="approval-section">
+    <h2>Persetujuan Cuti</h2>
+    <p>Manajer dapat menyetujui atau menolak pengajuan cuti.</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Jabatan</th>
+                    <th>Tanggal Cuti</th>
+                    <th>Alasan</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Siti Aisyah</td>
+                    <td>Staff Administrasi</td>
+                    <td>12 - 15 Maret 2024</td>
+                    <td>Acara keluarga penting</td>
+                    <td><span class="status pending">Menunggu Persetujuan</span></td>
+                    <td>
+                        <button class="approve-btn">✔ Setujui</button>
+                        <button class="reject-btn">✖ Tolak</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rudi Hartono</td>
+                    <td>Supervisor</td>
+                    <td>20 - 25 Maret 2024</td>
+                    <td>Liburan keluarga</td>
+                    <td><span class="status approved">Disetujui</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Andi Wijaya</td>
+                    <td>Manager</td>
+                    <td>5 - 10 April 2024</td>
+                    <td>Keperluan pribadi</td>
+                    <td><span class="status pending">Menunggu Persetujuan</span></td>
+                    <td>
+                        <button class="approve-btn">✔ Setujui</button>
+                        <button class="reject-btn">✖ Tolak</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nurul Huda</td>
+                    <td>HRD</td>
+                    <td>8 - 12 Mei 2024</td>
+                    <td>Cuti melahirkan</td>
+                    <td><span class="status approved">Disetujui</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Budi Santoso</td>
+                    <td>Staff IT</td>
+                    <td>15 - 20 Juni 2024</td>
+                    <td>Urusan keluarga</td>
+                    <td><span class="status rejected">Ditolak</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Lina Anggraini</td>
+                    <td>Marketing</td>
+                    <td>10 - 14 Juli 2024</td>
+                    <td>Acara pernikahan saudara</td>
+                    <td><span class="status pending">Menunggu Persetujuan</span></td>
+                    <td>
+                        <button class="approve-btn">✔ Setujui</button>
+                        <button class="reject-btn">✖ Tolak</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Farhan Maulana</td>
+                    <td>Customer Service</td>
+                    <td>22 - 28 Agustus 2024</td>
+                    <td>Perjalanan ke luar kota</td>
+                    <td><span class="status approved">Disetujui</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Rizky Saputra</td>
+                    <td>Staff Keuangan</td>
+                    <td>1 - 5 September 2024</td>
+                    <td>Cuti tahunan</td>
+                    <td><span class="status pending">Menunggu Persetujuan</span></td>
+                    <td>
+                        <button class="approve-btn">✔ Setujui</button>
+                        <button class="reject-btn">✖ Tolak</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dian Permata</td>
+                    <td>Staff Produksi</td>
+                    <td>10 - 15 Oktober 2024</td>
+                    <td>Keperluan keluarga</td>
+                    <td><span class="status rejected">Ditolak</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Ari Wibowo</td>
+                    <td>Supervisor</td>
+                    <td>5 - 9 November 2024</td>
+                    <td>Perjalanan ke luar negeri</td>
+                    <td><span class="status approved">Disetujui</span></td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

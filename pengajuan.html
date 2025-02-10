@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Pengajuan Cuti - Liburin{% endblock %}
+
+{% block content %}
+<section id="pengajuan" class="form-section">
+    <h2>Pengajuan Cuti</h2>
+    <p>Ajukan cuti dengan mengisi formulir berikut.</p>
+    <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="departemen">Departemen:</label>
+        <input type="text" id="departemen" name="departemen" required>
+
+        <label for="no-register">No Register:</label>
+        <input type="text" id="no-register" name="no-register" required>
+
+        
+        <label for="tanggal">Tanggal Cuti:</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+        
+        <label for="alasan">Alasan:</label>
+        <textarea id="alasan" name="alasan" required></textarea>
+        
+        <button type="submit" class="btn">Kirim Pengajuan</button>
+    </form>
+</section>
+{% endblock %}

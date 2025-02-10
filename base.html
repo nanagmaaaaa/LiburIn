@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Liburin{% endblock %}</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <img src="../static/img/sample8.jpg" alt="Logo">
+        </div>
+        <h1>Libur<span>in</span>.</h1>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/pengajuan">Pengajuan Cuti</a></li>
+                <li><a href="/persetujuan">Persetujuan Cuti</a></li>
+                <li><a href="/riwayat">Riwayat Cuti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        // Toggle Menu untuk Mobile
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+
+            menuToggle.addEventListener("click", function() {
+                nav.classList.toggle("nav-active");
+            });
+        });
+    </script>
+
+    <!-- Main Content -->
+     <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Lisnawati. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
